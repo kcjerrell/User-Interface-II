@@ -1,14 +1,11 @@
+/* CSS Rest */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td { 
 	padding: 0;
 	margin: 0;
 	}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	}
 fieldset,img { 
-	border: 0;
+	/* border: 0; */
 	}
 address,caption,cite,code,dfn,em,strong,th,var {
 	font-weight: normal;
@@ -19,8 +16,99 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 100%;
 	}
 
-/* Add CSS styling here */
+/* General Styles */
+* {
+  border: 1px dashed #444;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 6vw;
+  letter-spacing: 0.5vw;
+}
+
+h2 {
+  font-size: 5vw;
+  letter-spacing: 0.5vw;
+}
+
+/* Page Section Styles */
+
+header {
+background-color: gray;
+padding: 2%;
+}
+
+nav {
+display: flex;
+justify-content: flex-start;
+}
+
+nav a, .boxLink {
+  background-color: blue;
+  font-size: 1.8vw;
+  margin: 0 0 0 0;
+  border: 2px solid black;
+  justify-content: space-between;
+}
 
 .intro {
-  color: blue;
+  display: flex;
+  align-items: flex-end;
+}
+
+.intro img {
+  width: 45%;
+  margin: 3%;
+}
+
+.introRight {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: flex-start;
+  margin: 3%;
+}
+
+.intro a {
+margin: 2% 0;
+}
+
+.intro p {
+font-size: 2.5vw;
+}
+
+main {}
+
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+
+.galleryRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galleryItem{
+  border: 2px solid #444;
+  width: 20%;
+}
+
+.galleryItem img {
+width: 100%;
+object-fit: cover;
+}
+
+footer {
+
+}
+
+footer a {
+
 }
