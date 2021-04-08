@@ -1,59 +1,117 @@
 /* CSS Rest */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td { 
-	padding: 0;
-	margin: 0;
-	}
-fieldset,img { 
-	/* border: 0; */
-	}
-address,caption,cite,code,dfn,em,strong,th,var {
-	font-weight: normal;
-	font-style: normal;
-	}
-h1,h2,h3,h4,h5,h6 {
-	font-weight: normal;
-	font-size: 100%;
-	}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
+}
+fieldset,
+img {
+  /* border: 0; */
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
 
 /* General Styles */
 * {
-  border: 1px dashed #444;
+  border: 0px dashed #444;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #ddd;
+}
+
 /* Heading Styles */
 h1 {
   font-size: 6vw;
-  letter-spacing: 0.5vw;
+  letter-spacing: 0.3vw;
 }
 
 h2 {
   font-size: 5vw;
-  letter-spacing: 0.5vw;
+  letter-spacing: 0.3vw;
 }
 
 /* Page Section Styles */
 
 header {
-background-color: gray;
-padding: 2%;
+  background-color: gray;
+  padding: 2%;
+  margin: 0 2%;
 }
 
 nav {
-display: flex;
-justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
-nav a, .boxLink {
-  background-color: blue;
+nav a {
+  margin: 0;
+  border: 0;
+  width: 9%;
+}
+
+.boxLink {
+  display: block;
+  padding: 0.5% 0;
+  background-color: #666666;
+  text-transform: lowercase;
+  color: #ddd;
+  text-decoration: none;
   font-size: 1.8vw;
-  margin: 0 0 0 0;
-  border: 2px solid black;
-  justify-content: space-between;
+  text-align: center;
+}
+
+.introRight .boxLink {
+  padding: 1% 4%;
+}
+
+.boxLink:hover {
+  background-color: #555566;
 }
 
 .intro {
@@ -63,7 +121,7 @@ nav a, .boxLink {
 
 .intro img {
   width: 45%;
-  margin: 3%;
+  margin: 2%;
 }
 
 .introRight {
@@ -71,44 +129,62 @@ nav a, .boxLink {
   flex-direction: column;
   width: 45%;
   align-items: flex-start;
-  margin: 3%;
+  margin: 2%;
 }
 
 .intro a {
-margin: 2% 0;
+  margin: 2% 0;
 }
 
 .intro p {
-font-size: 2.5vw;
+  font-size: 2.2vw;
 }
 
-main {}
+main {
+}
 
 .galleryContainer {
   display: flex;
   flex-direction: column;
-  margin: 3%;
+  margin: 2%;
 }
 
 .galleryRow {
   display: flex;
   justify-content: space-between;
+  margin: 2% 0;
 }
 
-.galleryItem{
-  border: 2px solid #444;
+.galleryItem {
   width: 20%;
+  background-color: #bbb;
 }
 
 .galleryItem img {
-width: 100%;
-object-fit: cover;
+  display: block;
+  border: 2px solid #444;
+  width: 100%;
+  object-fit: cover;
+}
+
+.galleryItem h4 {
+  display: block;
+  text-align: center;
+  font-size: 1.5vw;
+  letter-spacing: 0.1vw;
+  margin: 2% 0;
 }
 
 footer {
-
+  background-color: gray;
+  text-align: center;
+  font-size: 2.2vw;
+  padding: 3% 0;
+  margin: 0 2%;
 }
 
-footer a {
-
+footer .boxLink {
+  padding: 1% 4%;
+  width: 18%;
+  margin: 2% auto;
 }
