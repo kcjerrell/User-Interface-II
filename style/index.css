@@ -1,1 +1,286 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General Styles */
+* {
+  /* border: 1px dashed #444; */
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ddd;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  color: #222;
+  font-size: 1.6rem;
+}
+
+/* <h*> Styles */
+h1, h2, h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 8rem;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+/* Header Styles */
+header {
+  background-color: gray;
+  padding: 2%;
+  margin: 0 0%;
+}
+
+.headerContent {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+}
+
+nav .boxLink {
+  flex: 1 1 auto;
+  padding: 1% 0;
+}
+
+.boxLink {
+  display: inline-block;
+  padding: 0.5% 5%;
+  background-color: #666666;
+  text-transform: lowercase;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.boxLink:hover {
+  background-color: #555555;
+  color: #ddd;
+}
+
+/* Top Section */
+.intro {
+  display: flex;
+  align-items: flex-end;
+}
+
+.intro img {
+  width: 50%;
+  padding: 2%;
+}
+
+.introRight {
+  width: 50%;
+  padding: 2%;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.introRight > * {
+  margin: 1% 0;
+}
+
+/* Gallery Section */
+.galleryRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2% 2%;
+  padding: 0 0;
+}
+
+.galleryItem {
+  background-color: #bbb;
+  margin: 1% 0;
+  width: 23%;
+}
+
+.galleryItem img {
+  display: block;
+  /* border: 1px solid #444; */
+  width: 100%;
+  object-fit: cover;
+}
+
+.galleryItem h3 {
+  display: block;
+  text-align: center;
+  margin: 0.2rem auto;
+}
+
+.col3adjust {
+  display: none;
+}
+
+/* Footer Section */
+footer {
+  background-color: gray;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1%;
+  margin: 0 2%;
+}
+
+footer > * {
+  margin: 0.5%;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  /* body {
+    background-color: #ddc;
+  } */
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .intro img {
+    width: 100%;
+    padding: 2%;
+  }
+
+  .introRight {
+    width: 100%;
+    padding: 2%;
+  }
+
+  .galleryItem {
+    width: 30%;
+  }
+
+  .col3adjust {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  /* body {
+    background-color: #ccd;
+  } */
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+header {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav .boxLink {
+  width: 45%;
+}
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .intro img {
+    width: 100%;
+    padding: 2%;
+  }
+
+  .introRight {
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .galleryItem {
+    width: 46%;
+  }
+
+  .col3adjust {
+    display: none;
+  }
+}
