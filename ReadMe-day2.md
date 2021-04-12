@@ -24,8 +24,8 @@ In this challenge you will refactor your personal portfolio code to make it resp
 
 New features of a project should occur in a new branch in the same repository. Follow these steps to set up and work on your project from Thursday:
 
-- [ ] `cd` into your personal portfolio folder
-- [ ] Create a new branch from `<firstName-lastName>`:
+- [x] `cd` into your personal portfolio folder
+- [x] Create a new branch from `<firstName-lastName>`:
 
 ```bash
 git checkout -b <firstName-lastName-day2>
@@ -60,7 +60,7 @@ Once you finish the minimum viable project, work on any of the following stretch
 
 **What if I'm not done with my site from last time?**
 
-*If you're not totally happy with your site, that's fine. Try to work with what you have. 
+*If you're not totally happy with your site, that's fine. Try to work with what you have.
 
 **My site works on mobile - does that count as responsive?**
 
