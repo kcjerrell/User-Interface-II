@@ -158,7 +158,7 @@ nav .boxLink {
 .galleryItem {
   background-color: #bbb;
   margin: 1% 0;
-  width: 24%;
+  width: 23%;
 }
 
 .galleryItem img {
@@ -182,7 +182,7 @@ nav .boxLink {
 footer {
   background-color: gray;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 1%;
   margin: 0 2%;
 }
@@ -203,6 +203,23 @@ footer > * {
 
   h2 {
     font-size: 5rem;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .intro img {
+    width: 100%;
+    padding: 2%;
+  }
+
+  .introRight {
+    width: 100%;
+    padding: 2%;
   }
 
   .galleryItem {
@@ -227,6 +244,20 @@ footer > * {
     font-size: 3rem;
   }
 
+header {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav .boxLink {
+  width: 45%;
+}
+
   .intro {
     display: flex;
     flex-direction: column;
@@ -241,6 +272,8 @@ footer > * {
 
   .introRight {
     width: 100%;
+    text-align: center;
+    padding: 2%;
   }
 
   .galleryItem {
